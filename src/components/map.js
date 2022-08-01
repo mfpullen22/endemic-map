@@ -27,7 +27,7 @@ function Map() {
         layer.on({
             click: highlightFeature,
         });
-        layer.bindTooltip(`<div><b>County:</b> ${feature.properties.NAME}<p><b>Blasto Cases:</b> ${feature.properties.blasto}</p></div>`,
+        layer.bindTooltip(`<div><b>County:</b> ${feature.properties.NAME}<p><b>Blasto Cases:</b> ${feature.properties.blasto}</p><p><b>Histo Cases:</b> ${feature.properties.histo}</p><p><b>Cocci Cases:</b> ${feature.properties.cocci}</p></div>`,
             {
                 direction: "top",
                 sticky: true,
@@ -54,7 +54,7 @@ function Map() {
 
     const style = (feature => {
         return ({
-            fillColor: mapPolygonColorToDensity(feature.properties.blastoCount),
+            fillColor: mapPolygonColorToDensity(feature.properties.blasto),
             weight: 1,
             opacity: 1,
             color: 'black',
@@ -74,7 +74,7 @@ function Map() {
     });
     
     var maxBounds = [
-        [5.499550, -167.276413], //Southwest
+        [4.499550, -167.276413], //Southwest
         [83.162102, -52.233040]  //Northeast
     ];
     
@@ -84,13 +84,17 @@ return (
         className="max-w-full mx-auto pt-18 px-4 sm:pt-10 sm:px-20 lg:max-w-7xl lg:px-8">
         <div className="h-full">
             <MapContainer 
-                zoom={3}
+                zoom={4}
                 maxZoom={6}
-                minZoom={2}
+                minZoom={4}
                 style={mapStyle}
-                scrollWheelZoom={true}>
+                scrollWheelZoom={true}
+                maxBounds={maxBounds}
+                maxBoundsViscosity={1}
+                center={[10.616276686609176, 3.4219812261325426]}>
                     <TileLayer 
-                    url="https://tile.thunderforest.com/atlas/{z}/{x}/{y}.png?apikey=3f2cdfc0d2f647b0bfd1a3d8a7227bfd"/>
+                    attribution="Map tiles by Carto, under CC BY 3.0. Data by OpenStreetMap, under ODbL."
+                    url="https://cartocdn_{s}.global.ssl.fastly.net/base-eco/{z}/{x}/{y}.png"/>
                     {feature && (<GeoJSON data={feature} style={style} onEachFeature={onEachFeature} />
                     )}
             </MapContainer>
