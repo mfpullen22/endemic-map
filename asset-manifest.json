@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/endemic-map/static/css/main.16521cd0.css",
-    "main.js": "/endemic-map/static/js/main.dd8a24a3.js",
+    "main.js": "/endemic-map/static/js/main.9da445e5.js",
     "static/js/787.a26db6ce.chunk.js": "/endemic-map/static/js/787.a26db6ce.chunk.js",
     "index.html": "/endemic-map/index.html",
     "main.16521cd0.css.map": "/endemic-map/static/css/main.16521cd0.css.map",
-    "main.dd8a24a3.js.map": "/endemic-map/static/js/main.dd8a24a3.js.map",
+    "main.9da445e5.js.map": "/endemic-map/static/js/main.9da445e5.js.map",
     "787.a26db6ce.chunk.js.map": "/endemic-map/static/js/787.a26db6ce.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.16521cd0.css",
-    "static/js/main.dd8a24a3.js"
+    "static/js/main.9da445e5.js"
   ]
 }
