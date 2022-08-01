@@ -74,8 +74,8 @@ function Map() {
     });
     
     var maxBounds = [
-        [4.499550, -167.276413], //Southwest
-        [83.162102, -52.233040]  //Northeast
+        [4.499550, -187.276413], //Southwest
+        [83.162102, -42.233040]  //Northeast
     ];
     
 return (
@@ -91,7 +91,7 @@ return (
                 scrollWheelZoom={true}
                 maxBounds={maxBounds}
                 maxBoundsViscosity={1}
-                center={[10.616276686609176, 3.4219812261325426]}>
+                center={[38.616276686609176, -98.4219812261325426]}>
                     <TileLayer 
                     attribution="Map tiles by Carto, under CC BY 3.0. Data by OpenStreetMap, under ODbL."
                     url="https://cartocdn_{s}.global.ssl.fastly.net/base-eco/{z}/{x}/{y}.png"/>
