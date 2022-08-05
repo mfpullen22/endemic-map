@@ -4,7 +4,7 @@ import { MapContainer, TileLayer, useMap, GeoJSON } from 'react-leaflet';
 import features from "../data/fungal_geoJSON.json";
 import { layerGroup } from "leaflet";
 
-function Map() {
+function CocciMap() {
     const [onSelect, setOnselect] = useState({});
 
     const highlightFeature = (e => {
@@ -38,23 +38,25 @@ function Map() {
             layer.openTooltip();
     }
 
-    const mapPolygonColorToDensity = (blastoCount => {
-        return blastoCount > 150
+    const mapPolygonColorToDensity = (cocciCount => {
+        return cocciCount > 1000
         ? '#fe0131'
-        : blastoCount > 50
+        : cocciCount > 250
         ? '#e90069'
-        : blastoCount > 25
+        : cocciCount > 100
         ? '#bd2d8f'
-        : blastoCount > 1
+        : cocciCount > 50
         ? "#84489d"
-        : blastoCount > 0
+        : cocciCount > 3
         ? "#4b5294"
+        : cocciCount > 0
+        ? "#265079"
         : '#fee5d9';
     });
 
     const style = (feature => {
         return ({
-            fillColor: mapPolygonColorToDensity(feature.properties.blasto),
+            fillColor: mapPolygonColorToDensity(feature.properties.cocci),
             weight: 1,
             opacity: 1,
             color: 'black',
@@ -108,4 +110,4 @@ return (
 
 }
 
-export default Map;
+export default CocciMap;
