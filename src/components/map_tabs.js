@@ -4,9 +4,9 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-import BlastoMap from './blasto_map';
-import HistoMap from './histo_map';
-import CocciMap from './cocci_map';
+import BlastoMap from './maps/blasto_map';
+import HistoMap from './maps/histo_map';
+import CocciMap from './maps/cocci_map';
 
 function TabPanel(props) {
     const { children, value, index, ...other } = props;

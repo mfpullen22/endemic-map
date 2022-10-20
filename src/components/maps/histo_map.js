@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import "leaflet/dist/leaflet.css";
 import { MapContainer, TileLayer, useMap, GeoJSON } from 'react-leaflet';
-import features from "../data/fungal_geoJSON.json";
+import features from "../../data/fungal_geoJSON.json";
 import { layerGroup } from "leaflet";
 
 function HistoMap() {
