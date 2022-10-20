@@ -8,9 +8,6 @@ function App() {
   return (
     <div className="bg-blue-300">
       <Home />
-      <BlastoMap />
-      <HistoMap />
-      <CocciMap />
     </div>
   );
 }
