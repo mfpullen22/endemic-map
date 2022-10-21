@@ -1,14 +1,16 @@
 import React from "react";
 import Footer from "./footer";
 import MapTabs from "./map_tabs";
+import Hero from "./hero";
 
 function Home() {
     
 
     return (
         <div>
-                <MapTabs />
-                <Footer />
+            <Hero />
+            <MapTabs />
+            <Footer />
         </div>
     )
 }
