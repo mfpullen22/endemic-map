@@ -1,15 +1,18 @@
 {
   "files": {
-    "main.css": "/endemic-map/static/css/main.0c21c940.css",
-    "main.js": "/endemic-map/static/js/main.564212c4.js",
+    "main.css": "/endemic-map/static/css/main.da15ab0e.css",
+    "main.js": "/endemic-map/static/js/main.e90cc3dc.js",
     "static/js/787.a26db6ce.chunk.js": "/endemic-map/static/js/787.a26db6ce.chunk.js",
+    "static/media/fungus.jpg": "/endemic-map/static/media/fungus.44124c97620ac4e20579.jpg",
+    "static/media/UMN.png": "/endemic-map/static/media/UMN.c31c2e9fc5859261ff1b.png",
+    "static/media/WUSTL-3.webp": "/endemic-map/static/media/WUSTL-3.5616e099c685791cc9eb.webp",
     "index.html": "/endemic-map/index.html",
-    "main.0c21c940.css.map": "/endemic-map/static/css/main.0c21c940.css.map",
-    "main.564212c4.js.map": "/endemic-map/static/js/main.564212c4.js.map",
+    "main.da15ab0e.css.map": "/endemic-map/static/css/main.da15ab0e.css.map",
+    "main.e90cc3dc.js.map": "/endemic-map/static/js/main.e90cc3dc.js.map",
     "787.a26db6ce.chunk.js.map": "/endemic-map/static/js/787.a26db6ce.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0c21c940.css",
-    "static/js/main.564212c4.js"
+    "static/css/main.da15ab0e.css",
+    "static/js/main.e90cc3dc.js"
   ]
 }
