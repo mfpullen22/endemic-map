@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/endemic-map/static/css/main.fd364435.css",
-    "main.js": "/endemic-map/static/js/main.449898a3.js",
+    "main.js": "/endemic-map/static/js/main.a5365e11.js",
     "static/js/787.a26db6ce.chunk.js": "/endemic-map/static/js/787.a26db6ce.chunk.js",
     "static/media/histo_cdc.tif": "/endemic-map/static/media/histo_cdc.e5552681ed4b92061436.tif",
     "static/media/fungus.jpg": "/endemic-map/static/media/fungus.44124c97620ac4e20579.jpg",
@@ -9,11 +9,11 @@
     "static/media/WUSTL-3.webp": "/endemic-map/static/media/WUSTL-3.5616e099c685791cc9eb.webp",
     "index.html": "/endemic-map/index.html",
     "main.fd364435.css.map": "/endemic-map/static/css/main.fd364435.css.map",
-    "main.449898a3.js.map": "/endemic-map/static/js/main.449898a3.js.map",
+    "main.a5365e11.js.map": "/endemic-map/static/js/main.a5365e11.js.map",
     "787.a26db6ce.chunk.js.map": "/endemic-map/static/js/787.a26db6ce.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fd364435.css",
-    "static/js/main.449898a3.js"
+    "static/js/main.a5365e11.js"
   ]
 }
