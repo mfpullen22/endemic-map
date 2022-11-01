@@ -2,7 +2,8 @@ import React, {useState} from "react";
 import "leaflet/dist/leaflet.css";
 import { MapContainer, TileLayer, useMap, GeoJSON } from 'react-leaflet';
 import features from "../../data/fungal_geoJSON.json";
-import { layerGroup } from "leaflet";
+//import { layerGroup } from "leaflet";
+import BlastoLegend from "./blasto_legend";
 
 function BlastoMap() {
     const [onSelect, setOnselect] = useState({});
@@ -40,15 +41,13 @@ function BlastoMap() {
 
     const mapPolygonColorToDensity = (blastoCount => {
         return blastoCount > 150
-        ? '#fe0131'
+        ? '#003f5c'
         : blastoCount > 50
-        ? '#e90069'
+        ? '#7a5195'
         : blastoCount > 25
-        ? '#bd2d8f'
-        : blastoCount > 1
-        ? "#84489d"
+        ? '#ef5675'
         : blastoCount > 0
-        ? "#4b5294"
+        ? "#ffa600"
         : '#fee5d9';
     });
 
@@ -97,6 +96,7 @@ return (
                     url="https://cartocdn_{s}.global.ssl.fastly.net/base-eco/{z}/{x}/{y}.png"/>
                     {feature && (<GeoJSON data={feature} style={style} onEachFeature={onEachFeature} />
                     )}
+                <BlastoLegend />
             </MapContainer>
 
 

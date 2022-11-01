@@ -2,7 +2,8 @@ import React, {useState} from "react";
 import "leaflet/dist/leaflet.css";
 import { MapContainer, TileLayer, useMap, GeoJSON } from 'react-leaflet';
 import features from "../../data/fungal_geoJSON.json";
-import { layerGroup } from "leaflet";
+//import { layerGroup } from "leaflet";
+import CocciLegend from "./cocci_legend";
 
 function CocciMap() {
     const [onSelect, setOnselect] = useState({});
@@ -40,17 +41,15 @@ function CocciMap() {
 
     const mapPolygonColorToDensity = (cocciCount => {
         return cocciCount > 1000
-        ? '#fe0131'
+        ? '#003f5c'
         : cocciCount > 250
-        ? '#e90069'
+        ? '#58508d'
         : cocciCount > 100
-        ? '#bd2d8f'
+        ? '#bc5090'
         : cocciCount > 50
-        ? "#84489d"
-        : cocciCount > 3
-        ? "#4b5294"
+        ? "#ff6361"
         : cocciCount > 0
-        ? "#265079"
+        ? "#ffa600"
         : '#fee5d9';
     });
 
@@ -99,6 +98,7 @@ return (
                     url="https://cartocdn_{s}.global.ssl.fastly.net/base-eco/{z}/{x}/{y}.png"/>
                     {feature && (<GeoJSON data={feature} style={style} onEachFeature={onEachFeature} />
                     )}
+                <CocciLegend />
             </MapContainer>
 
 
