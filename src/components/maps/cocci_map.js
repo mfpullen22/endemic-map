@@ -28,7 +28,7 @@ function CocciMap() {
         layer.on({
             click: highlightFeature,
         });
-        layer.bindTooltip(`<div><b>County:</b> ${feature.properties.NAME}<p><b>Blasto Cases:</b> ${feature.properties.blasto}</p><p><b>Histo Cases:</b> ${feature.properties.histo}</p><p><b>Cocci Cases:</b> ${feature.properties.cocci}</p></div>`,
+        layer.bindTooltip(`<div><b>County:</b> ${feature.properties.NAME}<p>Cases/100k person-years</p></p><p><b>Coccidiodomycosis:</b> ${feature.properties.cocci}</p><p><b>Histoplasmosis:</b> ${feature.properties.histo}<p><b>Blastomycosis:</b> ${feature.properties.blasto}</p></div>`,
             {
                 direction: "top",
                 sticky: true,
