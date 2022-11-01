@@ -1,7 +1,7 @@
 import { Popover } from '@headlessui/react';
 import Fungus from "../images/fungus.jpg";
 
-export default function Example() {
+export default function Hero() {
   return (
     <div className="relative overflow-hidden bg-white">
       <div className="mx-auto max-w-7xl">

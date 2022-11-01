@@ -28,7 +28,7 @@ function BlastoMap() {
         layer.on({
             click: highlightFeature,
         });
-        layer.bindTooltip(`<div><b>County:</b> ${feature.properties.NAME}<p><b>Blasto Cases:</b> ${feature.properties.blasto}</p><p><b>Histo Cases:</b> ${feature.properties.histo}</p><p><b>Cocci Cases:</b> ${feature.properties.cocci}</p></div>`,
+        layer.bindTooltip(`<div><b>County:</b> ${feature.properties.NAME}<p>Cases/100k person-years</p><p><b>Blastomycosis:</b> ${feature.properties.blasto}</p><p><b>Histoplasmosis:</b> ${feature.properties.histo}</p><p><b>Coccidiodomycosis:</b> ${feature.properties.cocci}</p></div>`,
             {
                 direction: "top",
                 sticky: true,
@@ -81,6 +81,10 @@ return (
     <section
         aria-labelledby="section-map"
         className="max-w-full mx-auto pt-18 px-4 sm:pt-10 sm:px-20 lg:max-w-7xl lg:px-8">
+            <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 text-center">
+                Blastomycosis Cases Per 100,000 Person-Years
+            </h2>
+            <br />
         <div className="h-full">
             <MapContainer 
                 zoom={4}

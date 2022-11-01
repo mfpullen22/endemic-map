@@ -81,6 +81,10 @@ return (
     <section
         aria-labelledby="section-map"
         className="max-w-full mx-auto pt-18 px-4 sm:pt-10 sm:px-20 lg:max-w-7xl lg:px-8">
+            <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 text-center">
+                Histoplasmosis Cases Per 100,000 Person-Years
+            </h2>
+            <br />
         <div className="h-full">
             <MapContainer 
                 zoom={4}
